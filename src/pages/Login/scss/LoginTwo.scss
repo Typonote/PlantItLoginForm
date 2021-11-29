@@ -3,6 +3,7 @@
     padding-bottom: 1.5rem;
 }
 
+// 전체 컨테이너
 .BBB {
     max-width: 56rem;
     display: flex;
@@ -22,6 +23,7 @@
     }
 }
 
+// 이미지 컨테이너
 .CCC {
     display: block;
     width: 50%;
@@ -38,6 +40,7 @@
     height: 100%;
 }
 
+// 로그인 컨테이너
 .DDD {
     width: 50%;
     padding: 2rem;
@@ -47,19 +50,13 @@
     }
 }
 
-.EEE {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: black;
-    text-align: center;
-    font-weight: 700;
-}
-
+// 로고 이미지
 .Tlogo__Image {
     width: 60%;
     margin-bottom: 1rem;
 }
 
+// 소셜 로그인 버튼
 .FFF {
     display: flex;
     justify-content: center;
@@ -67,7 +64,7 @@
     margin-top: 1rem;
     color: white;
     border-radius: 0.5rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .FFF:hover {
@@ -75,10 +72,13 @@
 }
 
 .GGG {
-    padding-left: 1rem;
-    padding-right: 1rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 }
 
 .HHH {
@@ -93,8 +93,12 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 700;
-    padding-left: 1rem;
+
     padding-right: 1rem;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 0.8rem;
+    }
 }
 
 .JJJ {
@@ -135,14 +139,17 @@
 }
 
 .NNN {
-    display: block;
-    width: 90%;
+    width: 92%;
     background-color: #edf2f7;
     color: #4a5568;
     border: 1px solid #e2e8f0;
     border-radius: 0.25rem;
     padding: 0.5rem 1rem;
     appearance: none;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
 }
 
 .NNN:focus {
@@ -150,7 +157,10 @@
     box-shadow: 0 0 0 3px #9ae6b4;
 }
 
+// 로그인, 회원가입 부분
 .OOO {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-top: 2rem;
 }
 
@@ -167,13 +177,6 @@
     background-color: darken($color: #88bb61, $amount: 10%);
 }
 
-.QQQ {
-    display: flex;
-    margin-top: 1rem;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .RRR {
     width: 20%;
     border-bottom-width: 1px;
@@ -187,4 +190,7 @@
     color: #a0aec0;
     font-size: 0.75rem;
     line-height: 1rem;
+    text-align: end;
+    margin: auto 0;
+    cursor: pointer;
 }
