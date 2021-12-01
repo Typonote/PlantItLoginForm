@@ -1,0 +1,93 @@
+.Contact {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+// 전체 컨테이너
+.BBB {
+  max-width: 56rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 24rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+// 이미지 컨테이너
+.CCC {
+  display: block;
+  width: 50%;
+  background-size: cover;
+  background-color: yellowgreen;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.CCC__Image {
+  width: 100%;
+  height: 100%;
+}
+
+.Email__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.Input__Box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.Input__Label {
+  margin-top: 1rem;
+}
+
+.Email__Input {
+  width: 60%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  color: #2d3748;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e0;
+  font-weight: 400;
+}
+
+.Email__Input:focus {
+  border: 1px solid #667eea;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.Submit__Button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem;
+  border: 0;
+  background-color: #90bb65;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.Text__Area {
+  width: 80%;
+  margin-top: 0.5rem;
+}
