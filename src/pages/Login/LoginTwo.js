@@ -5,6 +5,8 @@ import GoogleButtonImg from "../../Asset/login_button_google.png";
 import LoginImage from "../../Asset/login.jpeg";
 import NaverButtonImg from "../../Asset/login_button_naver.png";
 
+// ClassName 그냥 영문명으로 해왔습니다 우람님
+
 const LoginTwo = () => {
   return (
     <div className="AAA">
